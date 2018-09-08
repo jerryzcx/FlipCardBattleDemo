@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/layout_pos"
+        android:layout_width="match_parent"
+        android:layout_height="184.3dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_single" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.pili.pldroid.player.widget.PLVideoTextureView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true" />
+
+            <ProgressBar
+                android:id="@+id/loading"
+                style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_user"
+            android:layout_width="110dp"
+            android:layout_height="44dp"
+            android:layout_alignLeft="@+id/iv_back"
+            android:layout_alignParentTop="true">
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_headpic" />
+
+            <TextView
+                android:id="@+id/tv_nick"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.7dp"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="nick"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_loc"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nick"
+                android:layout_toRightOf="@+id/iv_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="nick"
+                android:textColor="@android:color/white"
+                android:textSize="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_rev"
+        android:layout_width="match_parent"
+        android:layout_height="184.3dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="56dp"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_back_rev"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:id="@+id/layout_user_rev"
+            android:layout_width="110dp"
+            android:layout_height="44dp"
+            android:layout_alignLeft="@+id/iv_back_rev"
+            android:layout_alignParentTop="true">
+
+            <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/iv_icon_rev"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="7dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_headpic" />
+
+            <TextView
+                android:id="@+id/tv_nick_rev"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.7dp"
+                android:layout_toRightOf="@+id/iv_icon_rev"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="nick"
+                android:textColor="@android:color/white"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/tv_loc_rev"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nick_rev"
+                android:layout_toRightOf="@+id/iv_icon_rev"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="nick"
+                android:textColor="@android:color/white"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_center_face"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="52dp" />
+
+        <TextView
+            android:id="@+id/tv_center_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110.3dp"
+            android:textColor="@android:color/white"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</RelativeLayout>

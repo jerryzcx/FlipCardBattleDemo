@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="184.3dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="327dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="126.7dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="51.3dp"
+            android:gravity="center"
+            android:text="Start"
+            android:textColor="@android:color/black"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/tv_start_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="119dp"
+            android:text="为了帮助你喜欢的视频获胜，双击它吧！"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</RelativeLayout>
